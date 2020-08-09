@@ -22,7 +22,13 @@
   cursor: pointer;
 }
 
+.image-container{
+  width: 100%;
+  margin: 0 auto;
+}
 .homepage-image-section{
+  width: 100%;
+  /* height: auto; */
   height: 91vh;
   background-image: url("https://images.pexels.com/photos/434337/pexels-photo-434337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-size: cover;
@@ -31,6 +37,24 @@
   color: #27aa99;
   
 }
+/* @media only screen and (min-width: 1270px) {
+  .homepage-image-section{
+    background-image: url("https://images.pexels.com/photos/434337/pexels-photo-434337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #text-on-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: 900;
+    text-shadow: 2px 2px #d7e168;
+  
+  }
+} */
 
 #text-on-image{
   position: absolute;
@@ -59,16 +83,29 @@
   grid-template-columns: 0.3fr 3.7fr 0fr 0.3fr;
   grid-template-rows: 1fr;
   gap: 1px 1px;
-  height: 600px;
+  height: 900px;
+  background-color: #e5eaeb;
+}
+
+
+.chip:hover{
+color: #41d4c1;
+font-size: 13px;
+font-weight: 500;
 }
 
 .aboutme-heading{
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
-  font-size: 30px;
-  padding: 0;
-  margin: 0;
+  font-size: 20px;
+  padding-top: 5px;
+}
+.project-heading{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 40px;
 }
 
 #aboutme-section{
@@ -87,7 +124,8 @@
   -moz-box-shadow: 0px 6px 5px #ccc;
   -webkit-box-shadow: 0px 6px 5px #ccc;
   box-shadow: 0px 6px 5px #ccc;
-  margin: 30px;   
+  margin: 30px;
+  align-items: baseline;
   
 }
 
@@ -96,7 +134,11 @@
   flex-direction: row;
   /* border: 1px solid magenta; */
   margin: 30px;
-  
+  /* border: 1px solid greenyellow; */
+  background-image: url("https://www.uidownload.com/files/154/524/981/abstract-geometric-background-in-turquoise-and-yellow-tones-thumb.jpg");
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -110,9 +152,9 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
-/* .aboutme-image{
-  border: 1px solid yellow;
-} */
+.aboutme-image{
+  padding-top: 95px;
+}
 
 #skills{
   line-height: 1; 
@@ -120,7 +162,7 @@
 #chips{
   display: flex;
   justify-content: space-evenly;
-  font-weight: 600;
+
 }
 
 .linktoproject {
@@ -187,7 +229,6 @@
 .flip-card-back {
   transform: rotateY(180deg);
   border-radius: 10px;
-  border-radius: 10px;
   width: 345px;
   height: 250px;
 }
@@ -216,4 +257,69 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 40px;
+}
+
+#contact-section-scroll{
+  background-color: #b0ede5;
+  display: grid;
+  grid-template-columns: 1.5fr 3.7fr 0fr 1.5fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  height: 300px;
+  
+}
+#contact-section h1{
+  text-align: center;
+  
+}
+.socialmedia-icons{
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+  height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    align-items: baseline;
+}
+
+.button-container{
+  width: 26%;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  align-items: baseline;
+}
+.download-button{
+  background-color: #b0ede5;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.linkedin{
+  color: white;
+}
+.linkedin:hover{
+  color: #0090df;
+}
+
+.email{
+  color: white;
+}
+.email:hover{
+  color: #32d0e4;
+}
+.github{
+  color: white;
+}
+.github:hover{
+  color: black;
 }

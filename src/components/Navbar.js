@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-scroll";
-
+import logo from '../images/Capture.PNG'
 const Navbar = () =>{
     return(
         <>
@@ -17,14 +17,14 @@ const Navbar = () =>{
             offset={0}
             duration={500}
           >
-           <h2>JP</h2> 
+           <img src={logo} alt=''logo style={{width:'60px',height:'60px',paddingTop:'5px',cursor:'pointer'}}/>
           </Link>
         </div>
         <div className="navbar-contents">
         <Link
             id="link"
             activeClass="active"
-            to="aboutme-section"
+            to="aboutme-section-scroll"
             spy={true}
             smooth={true}
             offset={0}
@@ -35,7 +35,7 @@ const Navbar = () =>{
           <Link
             id="link"
             activeClass="active"
-            to="projects"
+            to="project-section-scroll"
             spy={true}
             smooth={true}
             offset={0}
@@ -43,7 +43,17 @@ const Navbar = () =>{
           >
           <h2>Projects</h2>
           </Link>
+          <Link
+            id="link"
+            activeClass="active"
+            to="contact-section-scroll"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
           <h2>Contact</h2>
+          </Link>
         </div>
       </div>
         </div>

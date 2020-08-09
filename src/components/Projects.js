@@ -65,17 +65,17 @@ const Project = () => {
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-console.log(projectdetails)
   return (
     <>
-      <div className="aboutme-heading">
-        <h1>Projects</h1>
-      </div>
-      <div className="projects-section" id="projects">
-        <div></div>
-        <div id="project-container">
-       
-       { projectdetails && projectdetails.map( each => <div className= "flip-card">
+      <div className="project-heading" id="project-section-scroll" style={{backgroundColor:'#e5eaeb',paddingTop:'5px'}}>
+
+       Projects
+      </div> 
+      <div className="projects-section" id="projects"   >
+       <div style={{backgroundColor:'#e5eaeb'}}></div>
+        <div id="project-container" style={{backgroundColor:'#e5eaeb'}}>
+        
+       { projectdetails && projectdetails.map( each => <div className= "flip-card" >
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <Card className={classes.root}>
