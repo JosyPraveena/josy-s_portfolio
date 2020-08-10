@@ -20,7 +20,7 @@ const Contact = () =>{
         </div>
         <div className='button-container'><br/>
         
-        <a  href={Cv} className='download-button' download><RiDownload2Line color='white' size='25px'/> Download CV</a>
+        <a  href={Cv} className='download-button' download><RiDownload2Line className='downloadicon' size='25px'/> Download CV</a>
         </div>
         
         </div>

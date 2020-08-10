@@ -285,11 +285,26 @@ font-weight: 500;
 }
 
 .button-container{
-  width: 26%;
+  width: 24%;
   margin: 0 auto;
   padding: 10px;
   position: relative;
   align-items: baseline;
+}
+
+.button-container a{
+  background-color: #27aa99;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.button-container a:hover{
+  transition: all 0.4s ease 0s;
+  text-decoration: none;
+  opacity: 1;
+  transform: translateY(-5px);
 }
 .download-button{
   background-color: #b0ede5;
@@ -303,6 +318,13 @@ font-weight: 500;
   font-size: 20px;
   text-decoration: none;
 }
+
+
+
+.downloadicon{
+  color: white;
+}
+
 
 .linkedin{
   color: white;
