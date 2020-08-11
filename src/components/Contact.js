@@ -1,6 +1,6 @@
 import React from 'react';
 import {FaLinkedin} from 'react-icons/fa'
-import {GrLinkedin,GrGithub,GrMail,GrDownload} from 'react-icons/gr'
+import {GrGithub,GrMail} from 'react-icons/gr'
 import {RiDownload2Line} from 'react-icons/ri'
 import Cv from '../Josy_Praveena_Prabhagaran_CV.pdf'
 const Contact = () =>{
