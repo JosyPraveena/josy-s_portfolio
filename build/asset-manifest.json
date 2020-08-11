@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5024595d.chunk.css",
+    "main.js": "/static/js/main.9a9f2f73.chunk.js",
+    "main.js.map": "/static/js/main.9a9f2f73.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5becae93.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5becae93.js.map",
+    "static/js/2.ef108416.chunk.js": "/static/js/2.ef108416.chunk.js",
+    "static/js/2.ef108416.chunk.js.map": "/static/js/2.ef108416.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d36ae7e823f80b27f9fa2edfeaae4322.js": "/precache-manifest.d36ae7e823f80b27f9fa2edfeaae4322.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.5024595d.chunk.css.map": "/static/css/main.5024595d.chunk.css.map",
+    "static/js/2.ef108416.chunk.js.LICENSE.txt": "/static/js/2.ef108416.chunk.js.LICENSE.txt",
+    "static/media/Capture.PNG": "/static/media/Capture.f8ff0a19.PNG",
+    "static/media/Josy_Praveena_Prabhagaran_CV.pdf": "/static/media/Josy_Praveena_Prabhagaran_CV.20178c88.pdf",
+    "static/media/comicstore.PNG": "/static/media/comicstore.e5e9c923.PNG",
+    "static/media/cookbook.png": "/static/media/cookbook.245d95b8.png",
+    "static/media/linkedin.jpg": "/static/media/linkedin.9bbff862.jpg",
+    "static/media/localweather.png": "/static/media/localweather.9920c74b.png",
+    "static/media/reover.PNG": "/static/media/reover.63238873.PNG",
+    "static/media/todo.png": "/static/media/todo.0c369d65.png",
+    "static/media/whatsmyip.png": "/static/media/whatsmyip.68f4459d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5becae93.js",
+    "static/js/2.ef108416.chunk.js",
+    "static/css/main.5024595d.chunk.css",
+    "static/js/main.9a9f2f73.chunk.js"
+  ]
+}
