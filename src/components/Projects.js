@@ -68,7 +68,7 @@ const Project = () => {
   return (
     <>
     <div style={{backgroundColor:'#e5eaeb'}}>
-      <div className="project-heading" id="project-section-scroll" style={{paddingTop:'5px'}}>
+      <div className="project-heading" id="project-section-scroll" style={{paddingTop:'40px'}}>
 
 Projects
 </div> 

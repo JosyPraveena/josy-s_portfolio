@@ -13,9 +13,12 @@
 }
 .navbar-contents{
   display: flex;
-  width: 80vh;
+  width: 100%;
   justify-content: space-around;
   font-family: 'Roboto', sans-serif;
+}
+.navbar-contents a {
+  padding: 0 20px;
 }
 
 .navbar-contents h2{
@@ -68,7 +71,6 @@
   grid-template-columns: 0.3fr 3.7fr 0fr 0.3fr;
   grid-template-rows: 1fr;
   gap: 1px 1px;
-  height: 900px;
   background-color: #e5eaeb;
 }
 
@@ -106,10 +108,10 @@ font-weight: 500;
 #aboutme-section-content img{
   border-radius: 50%;
   width: 280px;
+  max-width: 100%;
   -moz-box-shadow: 0px 6px 5px #ccc;
   -webkit-box-shadow: 0px 6px 5px #ccc;
   box-shadow: 0px 6px 5px #ccc;
-  margin: 30px;
   align-items: baseline;
   
 }
@@ -124,12 +126,12 @@ font-weight: 500;
 #aboutme-section-content{
   width: 100%;
   display: inline-block;
-  margin: 30px;
   /* border: 1px solid greenyellow; */
   background-image: url("https://www.uidownload.com/files/154/524/981/abstract-geometric-background-in-turquoise-and-yellow-tones-thumb.jpg");
   opacity: 1;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 70px;
 }
 
 
@@ -155,7 +157,7 @@ font-weight: 500;
   line-height: 1; 
 }
 #chips{
-  display: flex;
+  display: block;
   justify-content: space-evenly;
 
 }
@@ -188,7 +190,7 @@ font-weight: 500;
   width: 345px;
   height: 250px;
   perspective: 1000px;
-  padding: 20px;
+  padding: 20px 20px 50px;
   padding-bottom: 130px;
 }
 /* .flip-card-expand {
@@ -261,7 +263,7 @@ font-weight: 500;
   grid-template-columns: 0.3fr 3.7fr 0fr 0.3fr;
   grid-template-rows: 1fr;
   gap: 1px 1px;
-  height: 300px;
+  padding: 40px 0px;
   
 }
 #contact-section h1{
