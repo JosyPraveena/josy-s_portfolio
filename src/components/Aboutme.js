@@ -10,7 +10,7 @@ const Aboutme = () => {
   return (
     <>
 
-    <div style={{backgroundColor:'white',height: '750px'}} id="aboutme-section-scroll">
+    <div id="aboutme-section-scroll">
     <FadeIn>
     <div className='aboutme-heading' ><h1>About me</h1></div>
     
