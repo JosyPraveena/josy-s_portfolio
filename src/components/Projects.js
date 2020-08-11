@@ -67,14 +67,15 @@ const Project = () => {
   };
   return (
     <>
-      <div className="project-heading" id="project-section-scroll" style={{backgroundColor:'#e5eaeb',paddingTop:'5px'}}>
+    <div style={{backgroundColor:'#e5eaeb'}}>
+      <div className="project-heading" id="project-section-scroll" style={{paddingTop:'5px'}}>
 
-       Projects
-      </div> 
+Projects
+</div> 
       <div className="projects-section" id="projects"   >
        <div style={{backgroundColor:'#e5eaeb'}}></div>
-        <div id="project-container" style={{backgroundColor:'#e5eaeb'}}>
-        
+        <div id="project-container">
+       
        { projectdetails && projectdetails.map( each => <div className= "flip-card" >
           <div className="flip-card-inner">
             <div className="flip-card-front">
@@ -128,6 +129,7 @@ const Project = () => {
               </CardActions>
               <Collapse in={expanded} timeout="auto" unmountOnExit>
                   <Typography variant="body1" className={classes.para}>
+                    <Typography variant="h5"  className={classes.para}>Stack</Typography>
                    {each.project_info}
                   </Typography>
               </Collapse>
@@ -137,6 +139,7 @@ const Project = () => {
         </div>)}
         </div>
         
+      </div>
       </div>
     </>
   );
