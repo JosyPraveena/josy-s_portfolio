@@ -13,7 +13,6 @@
 }
 .navbar-contents{
   display: flex;
-  width: 100%;
   justify-content: space-around;
   font-family: 'Roboto', sans-serif;
 }
@@ -40,9 +39,7 @@
   color: #27aa99;
   
 }
-@media only screen and (max-width: 1270px) {
 
-}
 
 #text-on-image{
   position: absolute;
@@ -74,6 +71,9 @@
   background-color: #e5eaeb;
 }
 
+.chip{
+  margin: 5px;
+}
 
 .chip:hover{
 color: #41d4c1;
@@ -114,6 +114,13 @@ font-weight: 500;
   box-shadow: 0px 6px 5px #ccc;
   align-items: baseline;
   
+}
+
+#project-section-scroll{
+  background-color: #e5eaeb;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
 }
 
 #aboutme-section-scroll{
@@ -159,7 +166,20 @@ font-weight: 500;
 #chips{
   display: block;
   justify-content: space-evenly;
+  color: black;
+  font-size: 20px;
+}
 
+#chips span{
+  font-size: 15px;
+  color: black;
+  font-weight: 900;
+}
+
+#chips span:hover{
+  font-size: 15px;
+  color: #41d4c1;
+  font-weight: 900;
 }
 
 .linktoproject {
@@ -190,7 +210,7 @@ font-weight: 500;
   width: 345px;
   height: 250px;
   perspective: 1000px;
-  padding: 20px 20px 50px;
+  padding: 20px 15px 50px;
   padding-bottom: 130px;
 }
 /* .flip-card-expand {
@@ -281,8 +301,8 @@ font-weight: 500;
     align-items: baseline;
 }
 
-.button-container{
-  width: 18%;
+.button-container{  
+  text-align: center;
   margin: 0 auto;
   padding: 10px;
   position: relative;
@@ -343,4 +363,29 @@ font-weight: 500;
 }
 .github:hover{
   color: black;
+}
+
+@media only screen and (max-width: 666px) {
+  .navbar-contents{
+   font-size: 15px;
+  }
+ 
+  .aboutme-description{
+    width: 100%;
+    text-align: justify;
+  } 
+  .aboutme-description h1{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+  } 
+.aboutme-image{
+    width: 100%;  
+  } 
+  .chip{
+    margin: 3px;
+  }
+  .socialmedia-icons{
+    width: 60%;
+  }
 }

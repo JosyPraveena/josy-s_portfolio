@@ -3,15 +3,18 @@ import profilephoto from "../images/linkedin.jpg";
 import Chip from '@material-ui/core/Chip';
 import Paper from '@material-ui/core/Paper';
 import {Link} from 'react-scroll'
-import FadeIn from "react-fade-in";
 
 const Aboutme = () => {
  
+  const chipsstyle = {
+   
+    padding: "20px"
+  }
   return (
     <>
 
     <div id="aboutme-section-scroll">
-    <FadeIn>
+
     <div className='aboutme-heading' ><h1>About me</h1></div>
     
       <div id="aboutme-section">
@@ -44,7 +47,7 @@ const Aboutme = () => {
                 <div id='skills'>
                 <h2>Skills</h2>
                 <div id='chips'>
-                <Chip variant='outlined' size="medium" label="React js" className='chip' />
+                <Chip variant='outlined' size="medium" label="React js" className='chip' style={{chipsstyle}} />
                 <Chip  variant='outlined' size="medium" label="Javascript" className='chip' />
                 <Chip variant='outlined' size="medium" label="HTML" className='chip' />
                 <Chip variant='outlined'  size="medium" label="CSS" className='chip'/>
@@ -59,7 +62,6 @@ const Aboutme = () => {
             </div>
         </Paper>
       </div>
-      </FadeIn>
       </div>
     </>
   );

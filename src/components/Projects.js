@@ -67,13 +67,13 @@ const Project = () => {
   };
   return (
     <>
-    <div style={{backgroundColor:'#e5eaeb'}}>
-      <div className="project-heading" id="project-section-scroll" style={{paddingTop:'40px'}}>
+    <div id="project-section-scroll">
+      <div className="project-heading"  style={{paddingTop:'40px'}}>
 
 Projects
 </div> 
       <div className="projects-section" id="projects"   >
-       <div style={{backgroundColor:'#e5eaeb'}}></div>
+       <div style={{backgroundColor:'#e5eaeb',width:'100%'}}></div>
         <div id="project-container">
        
        { projectdetails && projectdetails.map( each => <div className= "flip-card" >
