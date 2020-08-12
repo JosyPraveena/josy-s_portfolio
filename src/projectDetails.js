@@ -31,8 +31,7 @@ const projectdetails = [
       project_description:
         "Application to Und your IP and to make it interesting few facts about the place are shown. ",
       project_githublink: "https://github.com/JosyPraveena/What-smyIP",
-      project_info: `React, Material-UI, LeafLet (JS
-                  Library )Interactive Map, REST API`,
+      project_info: `React, Material-UI, LeafLet (JS Library)Interactive Map, REST API`,
       project_image: locatemyip
     },
     {
