@@ -29,27 +29,27 @@
   margin: 0 auto;
 }
 .homepage-image-section{
-
-  height: 91vh;
-  background-image: url("https://images.pexels.com/photos/434337/pexels-photo-434337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-family: 'Indie Flower', cursive;
-  color: #27aa99;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  position: relative;
   
 }
-
 
 #text-on-image{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 80px;
+  font-size: 50px;
   font-weight: 900;
   text-shadow: 2px 2px #d7e168;
-
+  width: 100%;
+  text-align: center;
+  color: #27aa99;
+  font-family: 'Indie Flower', cursive;
 }
 
 #buttons-on-image{
@@ -72,7 +72,8 @@
 }
 
 .chip{
-  margin: 5px;
+  margin: 0 5px 5px 0;
+  font-weight: 900;
 }
 
 .chip:hover{
@@ -96,29 +97,23 @@ font-weight: 500;
 }
 
 #aboutme-section{
-  /* border: 1px solid magenta; */
   display: grid;
   grid-template-columns: 0.3fr 3.7fr 0fr 0.3fr;
   grid-template-rows: 1fr;
   gap: 1px 1px;
-   /* margin: 25px; */
   justify-content: center;
   width: 100%;
 }
 #aboutme-section-content img{
-  border-radius: 50%;
-  width: 280px;
-  max-width: 100%;
-  -moz-box-shadow: 0px 6px 5px #ccc;
-  -webkit-box-shadow: 0px 6px 5px #ccc;
-  box-shadow: 0px 6px 5px #ccc;
-  align-items: baseline;
-  
+
+   border-radius: 50%;
+    width: 280px;
+    max-width: 100%;
+    align-items: baseline;
 }
 
 #project-section-scroll{
   background-color: #e5eaeb;
-  display: inline-block;
   width: 100%;
   overflow: hidden;
 }
@@ -133,12 +128,12 @@ font-weight: 500;
 #aboutme-section-content{
   width: 100%;
   display: inline-block;
-  /* border: 1px solid greenyellow; */
   background-image: url("https://www.uidownload.com/files/154/524/981/abstract-geometric-background-in-turquoise-and-yellow-tones-thumb.jpg");
   opacity: 1;
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 70px;
+  text-align: center;
 }
 
 
@@ -152,9 +147,18 @@ font-weight: 500;
   font-family: 'Josefin Sans', sans-serif;
   box-sizing: border-box;
 }
+.aboutme-description p{
+  font-size: 25px;
+  color: black;
+  text-align: left;
+}
+.aboutme-description h1{
+
+  text-align: left;
+}
 
 .aboutme-image{
-  padding-top: 95px;
+  padding-top: 75px;
   width: 30%;
   text-align: center;
   float: left;
@@ -162,6 +166,7 @@ font-weight: 500;
 
 #skills{
   line-height: 1; 
+  padding: 20px 0;
 }
 #chips{
   display: block;
@@ -186,13 +191,14 @@ font-weight: 500;
   color: #fff !important;
   text-decoration: none;
   background: rgb(61, 55, 55);
-  padding: 4px;
+  padding: 4px 20px;
   border-radius: 5px;
   display: inline-block;
   border: none;
   transition: all 0.4s ease 0s;
   font-size: 20px;
   font-family: 'Josefin Sans', sans-serif;
+  text-align: left;
 }
 
 .linktoproject:hover {
@@ -213,14 +219,6 @@ font-weight: 500;
   padding: 20px 15px 50px;
   padding-bottom: 130px;
 }
-/* .flip-card-expand {
-  background-color: transparent;
-  width: 345px;
-  height: 250px;
-  perspective: 1000px;
-  padding: 20px;
-  padding-bottom: 150px;
-} */
 
 .flip-card-inner {
   position: relative;
@@ -284,7 +282,7 @@ font-weight: 500;
   grid-template-rows: 1fr;
   gap: 1px 1px;
   padding: 40px 0px;
-  
+  width: 100%;
 }
 #contact-section h1{
   text-align: center;
@@ -365,22 +363,58 @@ font-weight: 500;
   color: black;
 }
 
-@media only screen and (max-width: 666px) {
+
+
+@media only screen and (max-width: 375px){
+ 
+  #text-on-image h1{
+    font-size: 35px;
+  }
+  .navbar-contents{
+    font-size: 11px;
+    padding-top: 10px;
+   }
+
+  #aboutme-section-content img {
+    width: 200px;
+  }
+  
+}
+
+@media only screen and (max-width: 642px){
+
+
+  #text-on-image{
+ 
+    font-size: 48px;
+  }
+  .navbar-contents a {
+    padding: 0 10px;
+  }
+  
   .navbar-contents{
    font-size: 15px;
   }
  
   .aboutme-description{
     width: 100%;
-    text-align: justify;
+    text-align: left;
+    padding: 15px;
   } 
   .aboutme-description h1{
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-size: 30px;
+  } 
+  .aboutme-description p{
+    width: 100%;
+    text-align: left;
+    font-size: 22px;
+    font-weight: light;
   } 
 .aboutme-image{
     width: 100%;  
+    padding-top: 30px;
   } 
   .chip{
     margin: 3px;
@@ -388,4 +422,99 @@ font-weight: 500;
   .socialmedia-icons{
     width: 60%;
   }
+ 
 }
+@media only screen and (max-width:360px){
+  .flip-card {
+    background-color: transparent;
+    width: 345px;
+    height: 250px;
+    perspective: 1000px;
+    padding: 20px 8px 20px;
+    padding-bottom: 130px;
+}
+}
+
+@media only screen and (max-width: 1024px){
+
+  #text-on-image{
+ 
+    font-size: 53px;
+  }
+  #aboutme-section-content img{
+    padding: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 320px){
+  #aboutme-section-content img {
+    width: 200px;
+  }
+}
+
+
+
+@media only screen and (max-width: 856px){
+ 
+
+  #text-on-image{
+    font-size: 50px;
+  }
+}
+
+
+@media only screen and (max-width: 556px){
+
+  #text-on-image{
+
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 720px){
+
+
+  #text-on-image{
+    position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    font-size: 49px;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  #text-on-image h1{
+      font-size: 30px;
+    }
+    .homepage-image-section{
+      position: relative;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 600px)
+  {
+  #text-on-image h1{
+      font-size: 35px;
+    }
+  }
+  @media only screen and (max-width: 800px)
+  {
+  #text-on-image h1{
+      font-size: 40px;
+    }
+    }
+  @media only screen and (max-width: 1080px)
+  {
+  #text-on-image h1{
+      font-size: 45px;
+    }
+  }
+  @media only screen and (max-width: 1366px)
+  {
+  #text-on-image h1{
+      font-size: 48px;
+    }
+  } 
+  

@@ -5,7 +5,18 @@ const Imagesection = () =>{
         <>
         <div className='image-container'>
         <div className='homepage-image-section'>
-        <h1 id='text-on-image'>Josy's Portfolio</h1>
+        <img src='https://images.pexels.com/photos/434337/pexels-photo-434337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' 
+        srcset ='https://images.pexels.com/photos/434337/pexels-photo-434337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 1920w,
+        https://images.pexels.com/photos/434337/pexels-photo-434337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 1600w, 
+        https://images.pexels.com/photos/434337/pexels-photo-434337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 1440w,
+        https://images.pexels.com/photos/434337/pexels-photo-434337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 1366w,
+        https://images.pexels.com/photos/434337/pexels-photo-434337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 1024w,
+        https://images.pexels.com/photos/434337/pexels-photo-434337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 768,
+        https://images.pexels.com/photos/434337/pexels-photo-434337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 640w'
+        alt='landing page'/>
+        <div id='text-on-image'>
+        <h1>Josy's Portfolio</h1>
+        </div>
         </div>
         </div>
         </>
