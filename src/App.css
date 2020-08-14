@@ -384,6 +384,18 @@ font-weight: 500;
   }
   
 }
+@media only screen and (max-width: 350px){
+  .navbar-contents{
+    font-size: 15px;
+    /* padding-left: 10px; */
+   }
+}
+@media only screen and (max-width: 320px){
+  .navbar-contents{
+    font-size: 10px;
+    /* padding-left: 10px; */
+   }
+}
 
 @media only screen and (max-width: 642px){
 
@@ -398,7 +410,7 @@ font-weight: 500;
   
   .navbar-contents{
    font-size: 16px;
-   padding-left: 10px;
+   /* padding-left: 10px; */
   }
  
   .aboutme-description{
@@ -447,15 +459,34 @@ transform: translate(-50%, -50%);
 }
 }
 
-@media only screen and (max-width: 1024px){
-
-  #text-on-image{
-   position: absolute;
+@media only screen and (max-width:368px){
+  .flip-card {
+    background-color: transparent;
+    width: 345px;
+    height: 250px;
+    perspective: 1000px;
+    padding: 20px 8px 20px;
+    padding-bottom: 130px;
+}
+#text-on-image h1{
+  position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-    font-size: 53px;
-  }
+  font-size: 10px;
+}
+}
+
+
+@media only screen and (max-width: 1024px){
+
+  #text-on-image h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+
+    }
   #aboutme-section-content img{
     padding: 10px;
   }
@@ -532,7 +563,24 @@ transform: translate(-50%, -50%);
     }
   }
   
-  
+  @media only screen and (max-width: 414px){
+  #text-on-image h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+      font-size: 35px;
+    }
+  }
+  @media only screen and (max-width: 450px){
+    #text-on-image h1{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+        font-size: 35px;
+      }
+    }
   @media only screen and (max-width: 600px)
   {
   #text-on-image h1{
