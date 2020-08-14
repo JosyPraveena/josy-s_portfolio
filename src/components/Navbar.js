@@ -17,7 +17,7 @@ const Navbar = () =>{
             offset={0}
             duration={500}
           >
-           <img src={logo} alt=''logo style={{width:'60px',height:'60px',paddingTop:'5px',cursor:'pointer'}}/>
+           <img src={logo} alt='logo' id='logo' />
           </Link>
         </div>
         <div className="navbar-contents">

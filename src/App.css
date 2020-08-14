@@ -368,6 +368,10 @@ font-weight: 500;
 @media only screen and (max-width: 375px){
  
   #text-on-image h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
     font-size: 35px;
   }
   .navbar-contents{
@@ -384,16 +388,17 @@ font-weight: 500;
 @media only screen and (max-width: 642px){
 
 
-  #text-on-image{
+  /* #text-on-image{
  
     font-size: 48px;
-  }
+  } */
   .navbar-contents a {
-    padding: 0 10px;
+    padding: 0px 10px ;
   }
   
   .navbar-contents{
-   font-size: 15px;
+   font-size: 16px;
+   padding-left: 10px;
   }
  
   .aboutme-description{
@@ -424,7 +429,7 @@ font-weight: 500;
   }
  
 }
-@media only screen and (max-width:360px){
+@media only screen and (max-width:320px){
   .flip-card {
     background-color: transparent;
     width: 345px;
@@ -433,12 +438,22 @@ font-weight: 500;
     padding: 20px 8px 20px;
     padding-bottom: 130px;
 }
+#text-on-image h1{
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+  font-size: 10px;
+}
 }
 
 @media only screen and (max-width: 1024px){
 
   #text-on-image{
- 
+   position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
     font-size: 53px;
   }
   #aboutme-section-content img{
@@ -455,22 +470,31 @@ font-weight: 500;
 
 
 
-@media only screen and (max-width: 856px){
+@media only screen and (max-width: 432px){
  
+.navbar-contents a {
+    padding: 0px 10px;
+  }
 
-  #text-on-image{
-    font-size: 50px;
+#logo{
+  padding-top: 15px;
+}
+
+}
+
+ 
+@media only screen and (max-width: 464px){
+
+  #text-on-image h1{
+
+    font-size: 10px;
+  }
+  #logo{
+   margin: 5px;
   }
 }
 
-
-@media only screen and (max-width: 556px){
-
-  #text-on-image{
-
-    font-size: 45px;
-  }
-}
+/*
 @media only screen and (max-width: 720px){
 
 
@@ -481,8 +505,24 @@ font-weight: 500;
   transform: translate(-50%, -50%);
     font-size: 49px;
   }
+} */
+#logo{
+  width: 60px;
+  height: 60px;
+  padding-top: 5px;
+  cursor: pointer;
 }
-
+@media only screen and (max-width: 375px){
+  #text-on-image h1{
+    font-size: 30px;
+  }
+  #logo{
+    width: 60px;
+    height: 60px;
+    padding-top: 25px;
+    cursor: pointer;
+  }
+}
 @media only screen and (max-width: 400px){
   #text-on-image h1{
       font-size: 30px;
@@ -499,21 +539,27 @@ font-weight: 500;
       font-size: 35px;
     }
   }
-  @media only screen and (max-width: 800px)
-  {
-  #text-on-image h1{
-      font-size: 40px;
-    }
-    }
-  @media only screen and (max-width: 1080px)
+  @media only screen and (max-width: 768px)
   {
   #text-on-image h1{
       font-size: 45px;
     }
   }
+  @media only screen and (max-width: 800px)
+  {
+  #text-on-image {
+      font-size: 40px;
+    }
+    }
+  @media only screen and (max-width: 1080px)
+  {
+  #text-on-image {
+      font-size: 45px;
+    }
+  }
   @media only screen and (max-width: 1366px)
   {
-  #text-on-image h1{
+  #text-on-image {
       font-size: 48px;
     }
   } 
